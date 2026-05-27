@@ -6,6 +6,8 @@
 
 import 'package:jaspr/client.dart';
 
+import 'package:docs_axentraglobalsynergy_com/components/clicker.dart'
+    deferred as _clicker;
 import 'package:jaspr_content/components/_internal/code_block_copy_button.dart'
     deferred as _code_block_copy_button;
 import 'package:jaspr_content/components/_internal/zoomable_image.dart'
@@ -16,8 +18,6 @@ import 'package:jaspr_content/components/sidebar_toggle_button.dart'
     deferred as _sidebar_toggle_button;
 import 'package:jaspr_content/components/theme_toggle.dart'
     deferred as _theme_toggle;
-import 'package:my_documentation_site/components/clicker.dart'
-    deferred as _clicker;
 
 /// Default [ClientOptions] for use with your Jaspr project.
 ///
@@ -37,6 +37,10 @@ import 'package:my_documentation_site/components/clicker.dart'
 /// ```
 ClientOptions get defaultClientOptions => ClientOptions(
   clients: {
+    'clicker': ClientLoader(
+      (p) => _clicker.Clicker(),
+      loader: _clicker.loadLibrary,
+    ),
     'jaspr_content:code_block_copy_button': ClientLoader(
       (p) => _code_block_copy_button.CodeBlockCopyButton(),
       loader: _code_block_copy_button.loadLibrary,
@@ -60,10 +64,6 @@ ClientOptions get defaultClientOptions => ClientOptions(
     'jaspr_content:theme_toggle': ClientLoader(
       (p) => _theme_toggle.ThemeToggle(),
       loader: _theme_toggle.loadLibrary,
-    ),
-    'clicker': ClientLoader(
-      (p) => _clicker.Clicker(),
-      loader: _clicker.loadLibrary,
     ),
   },
 );

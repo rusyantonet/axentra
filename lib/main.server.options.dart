@@ -5,6 +5,8 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/server.dart';
+import 'package:docs_axentraglobalsynergy_com/components/clicker.dart'
+    as _clicker;
 import 'package:jaspr_content/components/_internal/code_block_copy_button.dart'
     as _code_block_copy_button;
 import 'package:jaspr_content/components/_internal/zoomable_image.dart'
@@ -16,7 +18,6 @@ import 'package:jaspr_content/components/image.dart' as _image;
 import 'package:jaspr_content/components/sidebar_toggle_button.dart'
     as _sidebar_toggle_button;
 import 'package:jaspr_content/components/theme_toggle.dart' as _theme_toggle;
-import 'package:my_documentation_site/components/clicker.dart' as _clicker;
 
 /// Default [ServerOptions] for use with your Jaspr project.
 ///
@@ -37,6 +38,7 @@ import 'package:my_documentation_site/components/clicker.dart' as _clicker;
 ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
   clients: {
+    _clicker.Clicker: ClientTarget<_clicker.Clicker>('clicker'),
     _code_block_copy_button.CodeBlockCopyButton:
         ClientTarget<_code_block_copy_button.CodeBlockCopyButton>(
           'jaspr_content:code_block_copy_button',
@@ -56,16 +58,15 @@ ServerOptions get defaultServerOptions => ServerOptions(
     _theme_toggle.ThemeToggle: ClientTarget<_theme_toggle.ThemeToggle>(
       'jaspr_content:theme_toggle',
     ),
-    _clicker.Clicker: ClientTarget<_clicker.Clicker>('clicker'),
   },
   styles: () => [
+    ..._clicker.ClickerState.styles,
     ..._callout.Callout.styles,
     ..._code_block.CodeBlock.styles,
     ..._github_button.GitHubButton.styles,
     ..._image.Image.styles,
     ..._theme_toggle.ThemeToggleState.styles,
     ..._zoomable_image.ZoomableImage.styles,
-    ..._clicker.ClickerState.styles,
   ],
 );
 
