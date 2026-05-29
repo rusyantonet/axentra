@@ -62,7 +62,7 @@ void main() {
         // Out-of-the-box layout for documentation sites.
         DocsLayout(
           header: Header(
-            title: 'My Docs',
+            title: 'Docs',
             logo: '/images/logo.svg',
             items: [
               // Enables switching between light and dark mode.
