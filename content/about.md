@@ -1,6 +1,5 @@
 ---
 title: About Deffcon Docs
-layout: docs
 description: Learn more about Deffcon project.
 ---
 

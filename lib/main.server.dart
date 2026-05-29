@@ -77,12 +77,14 @@ void main() {
               SidebarGroup(
                 links: [
                   SidebarLink(text: "Overview", href: '/'),
+                  SidebarLink(text: "Quick Start", href: '/quick_start'),
                 ],
               ),
               SidebarGroup(
                 title: 'Content',
                 links: [
                   SidebarLink(text: "About", href: '/about'),
+                  SidebarLink(text: "FAQ", href: '/faq'),
                 ],
               ),
             ],
