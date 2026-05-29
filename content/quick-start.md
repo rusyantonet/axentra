@@ -1,6 +1,6 @@
 ---
 title: Welcome to Deffcon Docs!
-layout: docs
+layout: docs-alt
 description: A placeholder page for Rusyanto Project documentation.
 ---
 

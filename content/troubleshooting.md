@@ -1,6 +1,6 @@
 ---
 title: About Deffcon Docs
-layout: docs
+layout: docs-alt
 description: Learn more about Deffcon project.
 ---
 
