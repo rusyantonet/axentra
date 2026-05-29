@@ -76,15 +76,36 @@ void main() {
               // Adds navigation links to the sidebar.
               SidebarGroup(
                 links: [
-                  SidebarLink(text: "Overview", href: '/'),
-                  SidebarLink(text: "Quick Start", href: '/quick_start'),
+                  SidebarLink(text: "🏠 Overview", href: '/'),
+                  SidebarLink(text: "🛫 Quick Start", href: '/quick_start'),
                 ],
               ),
               SidebarGroup(
-                title: 'Content',
+                title: 'Fleet Management System',
                 links: [
-                  SidebarLink(text: "About", href: '/about'),
-                  SidebarLink(text: "FAQ", href: '/faq'),
+                  SidebarLink(text: "📖 Overview", href: '/fleet_management_system/'),
+                  SidebarLink(text: "🔌 Wiring", href: '/fleet_management_system/wiring'),
+                ],
+              ),
+              SidebarGroup(
+                title: 'Fatigue Monitoring System',
+                links: [
+                  SidebarLink(text: "📖 Overview", href: '/fatigue_monitoring_system/'),
+                  SidebarLink(text: "🔌 Wiring", href: '/fatigue_monitoring_system/wiring'),
+                ],
+              ),
+              SidebarGroup(
+                title: 'Speed Awareness Monitor',
+                links: [
+                  SidebarLink(text: "📖 Overview", href: '/speed_awareness_monitor/'),
+                  SidebarLink(text: "🔌 Wiring", href: '/speed_awareness_monitor/wiring'),
+                ],
+              ),
+              SidebarGroup(
+                title: 'Other',
+                links: [
+                  SidebarLink(text: "🐶 About", href: '/about'),
+                  SidebarLink(text: "🤖 FAQ", href: '/faq'),
                 ],
               ),
             ],

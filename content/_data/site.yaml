@@ -5,8 +5,10 @@ favicon: favicon.ico
 # Social media links
 social:
   - name: Github
-    url: https://github.com/schultek
-  - name: X/Twitter
-    url: https://twitter.com/schultek_dev
-  - name: Bluesky
-    url: https://bsky.app/profile/schultek.dev
+    url: https://github.com/rusyantonet
+  - name: LinkedIn
+    url: https://linkedin.com/in/rusyanto
+  - name: Instagram
+    url: https://www.instagram.com/rusyanto_id/
+  - name: Anonymous Chat
+    url: https://chat.deffcon.com/

@@ -1,11 +1,9 @@
 ---
-title: About Deffcon Docs
-description: Learn more about Deffcon project.
+title: About Me
+description: Lets get in touch!
 ---
 
-This documentation site is a fresh new project, lovingly crafted with the power of `jaspr_content`.
-
-Here are our socials, dynamically generated from the `site.yaml` data:
+Also if you have a problem with me. Find me and say that to my face! Or if you such a chicken just send me anonym chat!
 
 {{#site.social}}
 - [{{name}}]({{url}})
