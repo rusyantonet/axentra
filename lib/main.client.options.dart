@@ -6,8 +6,7 @@
 
 import 'package:jaspr/client.dart';
 
-import 'package:docs_axentraglobalsynergy_com/components/clicker.dart'
-    deferred as _clicker;
+import 'package:axentra/components/clicker.dart' deferred as _clicker;
 import 'package:jaspr_content/components/_internal/code_block_copy_button.dart'
     deferred as _code_block_copy_button;
 import 'package:jaspr_content/components/_internal/zoomable_image.dart'

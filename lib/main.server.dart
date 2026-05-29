@@ -62,13 +62,13 @@ void main() {
         // Out-of-the-box layout for documentation sites.
         DocsLayout(
           header: Header(
-            title: 'Docs',
+            title: 'Axentra',
             logo: '/images/logo.svg',
             items: [
               // Enables switching between light and dark mode.
               ThemeToggle(),
               // Shows github stats.
-              GitHubButton(repo: 'schultek/jaspr'),
+              GitHubButton(repo: 'rusyantonet/axentra'),
             ],
           ),
           sidebar: Sidebar(
